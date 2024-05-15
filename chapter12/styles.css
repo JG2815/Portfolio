@@ -1,0 +1,13 @@
+/*
+    Author: James Gates
+    Date:10/31/2023
+    File Name: styles.css
+*/
+
+.bg-light-blue{
+  background-color: #cce6ff;
+}
+
+header {
+padding: 3em;
+}

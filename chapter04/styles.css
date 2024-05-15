@@ -1,0 +1,75 @@
+/*	
+	Student Name: James Gates
+	File Name: Correcting CSS Style Rules
+	date: 09/5/2023
+*/
+body, header, nav, main, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+/*Div section*/
+#css1, #css2, #css3 {
+    width: 30%;
+    float: left;
+    padding: 0 1%;
+}
+/*Footer section*/
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #47476b;
+    padding: 1% 0;
+    border-top: 3px solid #47476b;
+    clear: left;
+}
+
+/*Body section*/
+body {
+    padding: 0%;
+    background-color: #d1d1e0;
+} 
+/*Header section*/
+header h1 {
+    font-size: 3em;
+    font-family: Georgia, Times, serif;
+    padding: 3%;
+    color: #47476b;
+    text-align: center;
+}
+
+/* Nav section*/
+
+ nav {
+    background-color: #47476b;
+} 
+
+nav ul { margin: 0; text-align: center;} 
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+     font-family: Verdana, Arial, sans-serif;
+     font-weight: bold;
+} 
+nav li a { display: block; color: #e3eaf8; padding: 0.5em 2em; text-decoration: none;}
+
+/* Main section*/
+main {
+    padding: 2%;
+    font-family: Geneva, Arial, sans-serif;
+} 
+main p {
+    font-size: 1.25em;
+    overflow: auto;
+}
+main h3 {
+    padding-top: 2%;
+    font-size: 2em;
+}
+main a {
+    color: #47476b;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+  }

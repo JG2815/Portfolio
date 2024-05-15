@@ -1,0 +1,11 @@
+WEBVTT
+
+NOTE
+Descriptions for the Responsive Web Design Video
+Student Name:James Gates
+File Name: descriptions.vtt
+Date: 10/10/2023
+
+1
+00:00.000 --> 00:28.000
+The video explains the different viewports for a desktop, tablet, and mobile devices. It shows how to create a wirframe for each different viewport. The bigger viewports let you have multiple columns while the smaller ones use a single column layout. When the wireframes are done the webpage can begin development. 

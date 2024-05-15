@@ -1,0 +1,81 @@
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(100%);
+}
+.carousel-caption {
+  color: black;
+}
+.carousel-inner {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+body {
+  background-color: #1e2124;
+}
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+a[href="resume.html"] {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+h1 {
+  font-size: 60px;
+}
+
+/* Mobile viewport */
+@media only screen and (max-width: 600px) {
+  
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+  }
+}
+/* Media query for tablet layout */ 
+@media only screen and (min-width: 600px) {
+  form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+  .btn {
+    grid-column: 1/span 2;
+    padding: 3%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* desktop viewport */
+  body {
+    font-size: 16px;
+  }
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
+
+}
+body {
+  color: #ffffff;
+
+}
+a
+{
+    color: #ffffff;
+}
+
+.assignment-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.assignment-item {
+  flex: 1 0 calc(33.33% - 20px);
+}
