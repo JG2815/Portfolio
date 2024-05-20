@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Screen</title>
+    <title>Contact Me</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/icon" href="images/favicon.ico">
+    <link rel="icon" type="image/icon" href="images/favicon.ico">
   <link rel="icon" type="image/png" href="images/android-chrome-192x192.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -24,6 +21,11 @@
             color: #ffffff;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .navbar {
             background-color: #333;
@@ -48,22 +50,28 @@
             background-color: #ddd;
             color: black;
         }
-        .hero {
+    
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .icons {
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            padding: 0 20px;
+            gap: 20px;
         }
-        .hero h1 {
-            font-size: 60px;
+        .icons a img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Make images circular */
+            transition: transform 0.3s;
         }
-        .content {
-            padding: 20px;
-        }
-        .section {
-            margin-bottom: 20px;
+        .icons a img:hover {
+            transform: scale(1.1);
         }
         .footer {
             background-color: #333;
@@ -74,46 +82,14 @@
             bottom: 0;
             width: 100%;
         }
-        a {
-            color: #ffffff;
-        }
-        .assignment-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .assignment-item {
-            flex: 1 0 calc(33.33% - 20px);
-        }
-        #image {
-            width: 20%;
-            height: 20%;
-            border-radius: 50%;
-            border-style: solid;
-        }
         /* Mobile viewport */
         @media only screen and (max-width: 600px) {
             body {
                 font-size: 14px;
             }
-            .container {
-                width: 100%;
-            }
-        }
-        /* Media query for tablet layout */ 
-        @media only screen and (min-width: 600px) {
-            form {
-                width: 80%;
-                margin: 0 auto;
-            }
-            .grid {
-                display: grid;
-                grid-template-columns: auto auto;
-                grid-gap: 20px;
-            }
-            .btn {
-                grid-column: 1/span 2;
-                padding: 3%;
+            .icons a img {
+                width: 80px;
+                height: 80px;
             }
         }
         /* Desktop viewport */
@@ -121,31 +97,30 @@
             body {
                 font-size: 16px;
             }
-            .container {
-                width: 960px;
-                margin: 0 auto;
-            }
         }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfloio</a>
-        <a href="contact.html">Contact Me</a>
-        <a href="James Gates - Resume - 2024.pdf">Resume</a>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="James Gates - Resume - 2024.pdf">Resume</a>
+        </div>
     </div>
 
-    <div class="hero">
-        <div>
-            <h1>James Gates Developer Portfloio</h1>
-            <h2>About Me</h2>
-            <h4>My name is James Gates and I am an aspiring programmer/game developer from Woodlyn, Pennsylvania.<br><br>  I have always liked playing video games all my life and the older I got the more interested I became in learning how they were made.<br><br>  Some of my favorite game series include Doom, Resident Evil, and the Yakuza/Like A Dragon games.<br><br> I'm currently looking for a job.</h4>
-            <p></p>
+    <div class="content">
+        <h2>Contacts</h2>
+        <div class="icons">
+            <a href="http://discordapp.com/users/423104729774555137" target="_blank"><img src="images/discord.png" alt="Discord"></a>
+            <a href="mailto:jamesgates638@gmail.com" target="_blank"><img src="images/gmail.png" alt="Gmail"></a>
+            <a href="https://github.com/JamesGates4623" target="_blank"><img src="images/github.png" alt="GitHub"></a>
         </div>
-        <div class="footer">
-            <p>&copy; Copyright 2024 James Gates</p>
-          </div>
+    </div>
 
+    <div class="footer">
+        <p>&copy; Copyright 2024 James Gates</p>
+    </div>
 </body>
 </html>
