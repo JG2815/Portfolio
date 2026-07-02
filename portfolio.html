@@ -27,9 +27,9 @@
             padding: 0;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            box-sizing: border-box;
     }
 
     /* Particle background */
@@ -68,11 +68,14 @@
 
     .centered-container {
       flex: 1; /* Take up remaining space */
+      width: min(100%, 700px);
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       text-align: center;
+      padding: 90px 20px 110px;
+      box-sizing: border-box;
     }
 
     .footer {
@@ -92,6 +95,13 @@
     .assignment-item {
       text-align: center;
       margin: 10px 0;
+      width: 100%;
+    }
+
+    .assignment-item a {
+      display: inline-block;
+      max-width: 100%;
+      line-height: 1.4;
     }
     /* Mobile viewport */
         @media only screen and (max-width: 600px) {
@@ -126,25 +136,13 @@
       <div id="img-div">
         <h3>Websites</h3>
       <div class="assignment-item">
-        <p><a href="chapter04/analyze04.html" target="_blank">Correcting CSS Style Rules</a></p>
-      </div>
-      <div class="assignment-item">
-        <p><a href="chapter05/analyze05.html" target="_blank">Correcting a CSS File</a></p>
-      </div>
-      <div class="assignment-item">
         <p><a href="chapter07/analyze07.html" target="_blank">Improving an HTML Document with Semantic Markup</a></p>
-      </div>
-      <div class="assignment-item">
-        <p><a href="chapter08/analyze08.html" target="_blank">Improving an HTML Form</a></p>
       </div>
       <div class="assignment-item">
         <p><a href="chapter09/analyze09.html" target="_blank">Adding a Video File and Captions File</a></p>
       </div>
       <div class="assignment-item">
         <p><a href="chapter10/analyze10.html" target="_blank">Improving a Webpage with JavaScript</a></p>
-      </div>
-      <div class="assignment-item">
-        <p><a href="chapter11/index.html" target="_blank">Improving SEO for a Webpage</a></p>
       </div>
       <div class="assignment-item">
         <p><a href="https://github.com/JG2815/Card-Deck-Manager" target="_blank">Card Deck Manager</a></p>
@@ -161,8 +159,13 @@
       </div>
       <div class="assignment-item">
         <p><a href="Kaiju-Game.zip" target="_blank"> Kajiu Virtual Pet Game Prototype (Programmer's Contribution)</a></p>
-    </div>
+      </div>
+      <h3>Other Projects</h3>
+      <div class="assignment-item">
+        <p><a href="https://github.com/JG2815/discord-stock-bot" target="_blank"> Discord Stock Bot (Active Development)</a></p>
+      </div>
   </div>
+
 
   <div class="footer">
     <p>&copy; 2026 Copyright James Gates</p>
